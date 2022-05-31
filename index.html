@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="codigo.js"> </script>
+  </head>
+  <body>
+    <section id="menu">
+      <nav id="menu-horizontal">
+        <ul>
+          <li><a href="#area1">Menu1</a></li>
+          <li><a href="#area2">Menu2</a></li>
+          <li><a href="#">Menu3</a></li>
+          <li><a href="#">Menu4</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="area1">
+      <p id="textoMusico">Primeira seção</p>
+      <img
+        id="musico"
+        src=".\assets\images\undraw_react_re_g3ui.svg"
+        alt="Musica classica, etc..."
+      />
+    </section>
+
+    <section id="area2">
+      <div id="containerTabela">
+        <table id="tabela">
+          <caption>
+            Titulo geral
+          </caption>
+          <thead>
+            <tr>
+              <th>Titulo coluna 1</th>
+              <th>Titulo coluna 2</th>
+              <th>Titulo coluna 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>conteudo 1</td>
+              <td>conteudo 2</td>
+              <td>conteudo 3</td>
+            </tr>
+            <tr>
+              <td colspan="2">conteudo 1</td>
+              <td rowspan="2">conteudo 3</td>
+            </tr>
+            <tr>
+              <td>conteudo 1</td>
+              <td>conteudo 2</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">rodapé</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section id="area3">
+      <input type="text" id="edtpeso" name="txtPeso" placeholder="Peso" />
+      <input type="text" id="edtaltura" name="txtAltura" placeholder="Altura" />
+      <button id="btnCalcIMC" type="button" onclick="calculaIMC()">Calcular IMC</button>
+      <div id="resp"> Resposta</div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    border: 0;
+}
+#area1{
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+#area2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/images/endless-constellation.svg);
+}
+
+#menu-horizontal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#menu-horizontal ul{
+    list-style: none;
+    padding: 0;
+    background-color: black;
+    text-align: right;
+}
+
+#menu-horizontal ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+#menu-horizontal ul li a {
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans';
+    
+}
+#menu-horizontal ul li a:hover {
+    background-color: grey;
+    opacity: 0.5;    
+}
+
+#textoMusico{
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    #textoMusico {
+      font-size: 1.5rem;
+    }
+  }
+
+  #tabela {
+      font-size: 1.2rem;
+      color: azure;
+  }
+
+#area3{
+    height: 100vh;
+}
+
+
+
